@@ -11,14 +11,13 @@ $ cd Docker101 \
 $ docker build -t flaskimage . \
 \
 **To view built docker images locally:** \
-$ docker image ls \
+$ docker images \
 \
-**Run your docker image using the following command.Here you are mapping port 80 of the container to port 5000 of VM/physical server where docker is running. You'll see a message stating that your app is running on port 80 i.e http://0.0.0.0:80:** \
+**Run your docker image using the following command.Here you are mapping port 80 of the container to port 4000 of VM/physical server where docker is running. You'll see a message stating that your app is running on port 80 i.e http://0.0.0.0:80:** \
 $ docker run -p 4000:80 flaskimage \
 \
 **Duplicate your terminal session and run this command. If everything goes well, you'll see "Dell EMC Docker101" printed on your console!** \
-$ curl http://localhost:4000/ \
-\
+$ curl http://localhost:4000 
 
 **To view docker containers locally:** \
 $ docker ps \
